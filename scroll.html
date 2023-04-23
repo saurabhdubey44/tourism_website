@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour India</title>
+
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+  html,
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: aliceblue;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+
+  }
+
+  .brand a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  li {
+    list-style-type: none;
+    margin-left: 3rem;
+  }
+
+  li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+
+  li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  li:hover::after {
+    width: 2rem;
+  }
+
+
+
+  body {
+    color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: xx-large;
+    background-color: white;
+    background-blend-mode: darken;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+
+    animation: change 10s infinite ease-in-out;
+    ;
+color: black;
+
+  }
+
+
+
+  .btn {
+
+
+    color: rgb(255, 255, 255);
+    padding: 4px 14px;
+
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+
+  .html {
+    scroll-behavior: smooth;
+  }
+
+
+  .content p {
+    color: rgb(224, 64, 43);
+  }
+
+
+  #section1 {
+    height: 800px;
+
+
+    background-blend-mode: darken;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+
+    animation: change 10s infinite ease-in-out;
+    ;
+    color: rgb(250, 227, 231);
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  #section2 {
+    height: 1800px;
+    background-color: white;
+    display: inline-block;
+  }
+
+#section3{
+  height: 800px;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+#section5{
+  height: 800px;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+  div.gallery {
+    margin: 80px;
+
+    float: left;
+    width: 300px;
+
+
+  }
+
+
+
+  div.gallery:hover {
+    color: green;
+  }
+
+  div.gallery img {
+    width: 130%;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  div.desc {
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+  }
+
+
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+  }
+
+  .content h1 {
+    color: rgb(250, 135, 154);
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+  }
+
+  .content h1 span {
+    color: rgb(245, 242, 61);
+  }
+
+  .content a {
+    background: rgb(38, 229, 243);
+    padding: 10px 24px;
+
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .content a :hover {
+    background: rgb(24, 201, 77);
+  }
+
+  @keyframes change {
+    0% {
+      background-image: url("img/agra.jfif");
+    }
+
+    50% {
+      background-image: url("img/diya.jpg");
+    }
+
+    100% {
+      background-image: url("img/lotus.jpg");
+    }
+
+
+  }
+
+
+  .about-section {
+    width: 90%;
+    background: #fff;
+    padding: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 30px;
+    border-left: 50px solid #3CEDA7;
+    border-right: 50px solid #3CEDA7;
+
+
+  }
+
+  .inner-width {
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: auto;
+  }
+
+  .about-section h1 {
+    text-align: center;
+  }
+
+  .border {
+    width: 100px;
+    height: 3px;
+    background: #3CEDA7;
+    margin: 40px auto;
+  }
+
+  .about-section-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-section-col {
+    flex: 50%;
+  }
+
+  .about {
+    padding-right: 30px;
+  }
+
+  .about p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #7E7C7A;
+    font-size: 17px;
+  }
+
+  .about a {
+    display: inline-block;
+    color: #7E7C7A;
+    text-decoration: none;
+    border: 2px solid #3CEDA7;
+    border-radius: 24px;
+    padding: 0px 40px;
+    transition: 0.4s linear;
+  }
+
+  .about a:hover {
+    color: #fff;
+    background: #3CEDA7;
+  }
+
+  .skills {
+    padding-left: 30px;
+  }
+
+  .skill {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    color: #7E7C7A
+  }
+
+  .progress {
+    width: 100%;
+    height: 12px;
+    background: #ddd;
+    border-radius: 12px;
+  }
+
+  .progress-bar {
+    height: 12px;
+    background: #3CEDA7;
+    border-radius: 12px;
+  }
+
+  .p1 {
+    width: 90%;
+  }
+
+  .p2 {
+    width: 70%;
+  }
+
+  .p3 {
+    width: 50%;
+  }
+
+  .progress-bar span {
+    float: right;
+    margin-right: 6px;
+    line-height: 13px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width:700px) {
+    .about-section-col {
+      flex: 100%;
+      margin: 10px 0;
+    }
+
+    .about,
+    .skills {
+      padding: 0;
+    }
+
+    .about {
+      text-align: center;
+    }
+  }
+
+  .places h1 {
+    color: rgb(197, 75, 75);
+    font-size: xx-large;
+    font-style: italic;
+  }
+
+
+  .button {
+    background-color: #4c63af;
+    border: none;
+    color: white;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 30px;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  .button a:hover {
+    color: #3CEDA7;
+  }
+
+
+
+  /* your CSS goes here*/
+  .title {
+    color: #fa9746;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .title::before {
+    position: absolute;
+    left: -29px;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    
+    box-shadow: 0px 4px 4px 0px #aaa;
+    border-radius: 4px;
+    content: '';
+  }
+
+  .title::after {
+    position: absolute;
+    left: -19px;
+    top: 25px;
+    height: 14px;
+    width: 14px;
+    transform: rotate(45deg);
+    
+    box-shadow: 0px 4px 4px 0px #aaa;
+    border-radius: 4px;
+    content: '';
+  }
+
+  /* services */
+  .services {
+    padding: 40px;
+    position: relative;
+  }
+
+  .services .square {
+    height: 100px;
+    width: 100px;
+    margin: 30px auto 40px;
+    position: relative;
+    border-radius: 15px;
+    
+    padding: 10px;
+    background-image: url('agra.jfif');
+    box-shadow: 0px 0px 27px 0px #ccc;
+    border: 2px dotted #eaf3fa;
+  }
+
+  .square i { display: block;
+    color: #eaf3fa;
+    font-size: 40px;
+    padding-top: 17px;
+    padding-right: 14px;
+  
+   
+  }
+
+  .services .square::before {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+  }
+
+  .services .square::after {
+    position: absolute;
+    left: 50px;
+    top: 66px;
+    width: 1px;
+    height: 88%;
+  }
+
+  .services .serv .num {
+    width: 60px;
+    height: 60px;
+    background-color: #7499f1;
+    box-shadow: 0px 0px 15px 0px #00a9d3;
+    margin: -38px auto 15px auto;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 7px;
+    border: 1px dashed;
+  }
+
+  .services .serv h5 {
+    color: #fa9746;
+  }
+
+  .services .serv p {
+    color: #777;
+  }
+
+  .services .serv hr {
+    width: 30px;
+    border-top: 3px solid rgb(0 169 211);
+  }
+
+	
+		
+		/* styling navlist */
+		#navlist {
+			background-color:  #0074D9;
+			position: absolute;
+			width: 100%;
+		}
+		
+		/* styling navlist anchor element */
+		#navlist a {
+			float:left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 20px;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		.navlist-right{
+			float:right;
+		}
+
+		/* hover effect of navlist anchor element */
+		#navlist a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		
+		/* styling search bar */
+		.search input[type=text]{
+			width:300px;
+			height:25px;
+			border-radius:25px;
+			border: none;
+
+		}
+		
+		.search{
+			float:right;
+			margin:7px;
+
+		}
+		
+		.search button{
+			background-color: #0074D9;
+			color: #f2f2f2;
+			float: right;
+			padding: 5px 10px;
+			margin-right: 16px;
+			font-size: 12px;
+			border: none;
+			cursor: pointer;
+		}
+
+			.btn{
+        background-color:rgb(38, 229, 243);
+        font-style: italic;
+        border-radius: 12px;
+        border-color: white;
+      }
+
+
+
+
+
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+
+
+
+
+
+</style>
+
+
+
+<body>
+  <div id="section1">
+
+
+
+    <header>
+
+      <div class="brand"><a href="#">Tour India</a>
+
+        
+    
+        
+        <button class="btn"><a href="C:\Users\91797\OneDrive\Desktop\new project\Login & Signup Form\Login & Signup Form\index.html" style="color: white">login</a></button>
+      </div>
+
+
+      <nav>
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Places</a></li>
+          <li><a href="#section3">Services</a></li>
+          <li><a href="#section5">About</a></li>
+
+
+
+
+        </ul>
+      </nav>
+    </header>
+    <br>
+    <h1>Welcome</h1></br>
+
+    <div class="section_top">
+      <div class="content">
+
+        <p>Fall in love with India</p>
+
+        <h1>Incredible!..<span>India</span></h1>
+
+        <br><br> <a href="#section2">EXPLORE</a></br></br>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+  <div id="section2">
+
+
+
+
+    
+	<!-- Navbar items -->
+	<div id="navlist">
+		<a href="#section1">Home</a>
+		<a href="#">North</a>
+		<a href="#">Cantral</a>
+		<a href="#">South</a>
+		<a href="#">North Eastern</a>
+		
+		<!-- search bar right align -->
+		<div class="search">
+			
+			<form action="google maps/google.html">
+				<input type="text"
+					placeholder=" search places"
+					name="search">
+				<button>
+					<i class="fa fa-search"
+						style="font-size: 18px;">
+					</i>
+				</button>
+			</form>
+		</div>
+	</div>
+	
+	
+
+    <p>BE</p>
+
+
+
+
+    <div class="places">
+      <br>
+      <h1>Places</h1></br>
+    </div>
+
+
+
+
+
+    <div class="gallery">
+      <a target="_blank" href="google maps/delhi.html">
+        <img src="img/delhi.jpg" alt="Cinque Terre" width="600" height="">
+      </a>
+      <div class="desc">Delhi</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="google maps/amristar.html">
+        <img src="img/golden temple.jpg" alt="Forest" width="600" height="">
+      </a>
+      <div class="desc">Amritsar</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="google maps/goa.html">
+        <img src="img/goa.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc">Goa</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="google maps/hydrabad.html">
+        <img src="img/hydrabad.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc">Hydrabad</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="google maps/kerala.html">
+        <img src="img/kerala.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc">Kerala</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="google maps/meghalata.html">
+        <img src="img/meghalaya.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc">Meghalaya</div>
+    </div>
+
+    
+   
+    <div class="gallery">
+      <a target="_blank" href="google maps/mumbai.html">
+        <img src="img/mumbai.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc">Mumbai</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="google maps/rajasthan.html">
+        <img src="img/rajasthan.jpg" alt="Northern Lights">
+      </a>
+      <div class="desc">Rajasthan</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="google maps/agra.html">
+        <img src="img/agra.jfif" alt="Northern Lights">
+      </a>
+      <div class="desc">Agra</div>
+    </div>
+
+  </div>
+
+<div id="section3">
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+    <h1 class="heading">our services</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/flight.jpg" alt="">
+            <h3>Flight Booking</h3>
+            <p>Book your flight ticket now from makemytrip</p>
+            <a href="https://www.makemytrip.com/flights/" class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="img/train.jpg" alt="">
+            <h3>Train Booking</h3>
+            <p>Want to go from train book your ticket now irctc</p>
+            <a href="https://www.irctc.co.in/nget/train-search" class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="img/hotel.jpg" alt="">
+            <h3>Hotel Booking</h3>
+            <p>Find the best hotel near you and relax</p>
+            <a href="https://www.makemytrip.com/hotels/" class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="img/food.jfif" alt="">
+            <h3>Order Food</h3>
+            <p>Have your food from your favorite Restraunts</p>
+            <a href="https://www.swiggy.com/" class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="img/ola.jpg" alt="">
+            <h3>Ola</h3>
+            <p>Book your cabs from ola dirictly</p>
+            <a href="https://www.olacabs.com
+            " class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="img/uber.png" alt="">
+            <h3>Uber</h3>
+            <p>Book your cabs from uber simply</p>
+            <a href="https://www.uber.com/in/en
+            " class="btn">GO</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+</div>
+
+  
+  <div id="section5">
+
+
+    <div class="about-section">
+      <div class="inner-width">
+        <h1>About Us</h1>
+        <div class="border"></div>
+        <div class="about-section-row">
+          <div class="about-section-col">
+            <div class="about">
+              <p>
+                We Provide Tour Plans for your most comfortable travel ever. Let yourself dive into the Beauty, Culture &amp; festivals of India. Have You're Good time at India.
+		
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="about-section-col">
+            <div class="skills">
+              <div class="skill">
+                <div class="title">North</div>
+                <div class="progress">
+                  <div class="progress-bar p1"><span>10%</span></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="title">South</div>
+                <div class="progress">
+                  <div class="progress-bar p2"><span>70%</span></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="title">North East</div>
+                <div class="progress">
+                  <div class="progress-bar p3"><span>50%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>
